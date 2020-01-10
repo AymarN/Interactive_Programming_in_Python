@@ -8,10 +8,10 @@ def name_to_number(name):
     if name=="rock":
         name = 0
         return name
-    elif name=="scissors":
+    elif name=="paper":
         name = 1
         return name
-    elif name=="paper":
+    elif name=="scissors":
         name = 2
         return name
     elif name=="lizard":
@@ -30,10 +30,10 @@ def number_to_name(number):
         number = "rock"
         return number
     elif number==1:
-        number = "scissors"
+        number = "paper"
         return number
     elif number==2:
-        number = "paper"
+        number = "scissors"
         return number
     elif number==3:
         number = "lizard"
