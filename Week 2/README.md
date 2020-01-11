@@ -13,7 +13,7 @@ We have provided a basic template for this mini-project here. Our suggested deve
 
 1.	Add code to the program template that creates a frame with an input field whose handler has the name input_guess. You will use this input field to enter guesses.
 
-2.	Add code to the event handler input_guess(guess)input_guess(guess) that takes the input string guessguess, converts it to an integer, and prints out a message of the form "Guess was 37" (or whatever the guess actually was). Hint: We have shown you how to convert strings to numbers in the lectures.
+2.	Add code to the event handler input_guess(guess) that takes the input string guess, converts it to an integer, and prints out a message of the form "Guess was 37" (or whatever the guess actually was). Hint: We have shown you how to convert strings to numbers in the lectures.
 
 3.	Add code to the function new_game that initializes a global variable secret_number to be a random number in the range [0, 100). (Note that this range should not include 100 as a possible secret number.) Remember to include a global statement. Hint: Look at the functions in the random module to figure out how to easily select such a random number. Observe that the call to new_game() at the bottom of the template ensures that secret_number is always initialized when the program starts running.
 
