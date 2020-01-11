@@ -58,6 +58,7 @@ def input_guess(guess):
             
     else:
         print "there is no guess remaining"
+        print "The Secret number was",secret_number
         new_game()
     
 # create frame
