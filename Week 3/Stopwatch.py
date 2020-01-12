@@ -11,16 +11,19 @@ total_stop = 0
 success_stop = 0
 message = "0:00.0"
 
-# define helper function format that converts time
-# in tenths of seconds into formatted string A:BC.D
-
-def format(t):
-    A = t // 600
-    number =  t // 10
-    amount_second = number %60
-    B = amount_second // 10
-    C = amount_second % 10
-    D = t % 10
+def format(time_in_seconds):
+    """ helper function format that converts time """
+    """ in tenths of seconds into formatted string A:BC.D """
+    # A ten of minutes 
+    A = time_in_seconds // 600
+    Intermediate_Operation =  time_in_seconds // 10
+    amount_of_seconds = Intermediate_Operation %60
+    # B Unity of minutes
+    B = amount_of_seconds  // 10
+    # C ten of seconds
+    C = amount_of_seconds  % 10
+    # D unity of seconds
+    D = time_in_seconds % 10
     return str(A)+":"+str(B)+str(C)+"."+str(D)  
       
 def Start():
@@ -38,15 +41,15 @@ def Stop():
     
 def Reset():
     """Event handler to reset the timer"""
-    if timer.is_running():
-        timer.stop()
-        global n,message
-        global total_stop
-        global success_stop
-        n = 0
-        message = "0:00.0"
-        total_stop=0
-        success_stop=0
+    #if timer.is_running():
+    timer.stop()
+    global n,message
+    global total_stop
+    global success_stop
+    n = 0
+    message = "0:00.0"
+    total_stop=0
+    success_stop=0
     
 def display():
     global success_stop
@@ -78,5 +81,6 @@ frame.set_draw_handler(draw)
 timer = simplegui.create_timer(interval, tick)
 # start frame
 frame.start()
-
 # Please remember to review the grading rubric
+
+
