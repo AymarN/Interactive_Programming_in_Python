@@ -1,5 +1,4 @@
 # Implementation of classic arcade game Pong
-
 import simplegui
 import random
 
@@ -22,11 +21,17 @@ paddle1_pos = HEIGHT / 2
 paddle2_pos = HEIGHT / 2
 paddle1_vel, paddle2_vel = 0, 0
 score1, score2 = 0, 0
+
+dict = {
+    'up': simplegui.KEY_MAP["up"], 
+    'down': simplegui.KEY_MAP["down"],
+    'q': simplegui.KEY_MAP["q"],
+    'a': simplegui.KEY_MAP["a"]
+}
 # initialize ball_pos and ball_vel for new bal in middle of table
 # if direction is RIGHT, the ball's velocity is upper right, else upper left
 def spawn_ball(direction):
     global ball_pos, ball_vel # these are vectors stored as lists
-    
     ball_pos = [WIDTH / 2, HEIGHT / 2]
     ball_vel[1] = - random.randrange(1, 3)
     if direction == RIGHT:
@@ -40,7 +45,6 @@ def spawn_ball(direction):
 def new_game():
     global paddle1_pos, paddle2_pos, paddle1_vel, paddle2_vel  # these are numbers
     global score1, score2  # these are ints
-    
     score1, score2 = 0, 0
     spawn_ball(RIGHT)
     
@@ -57,12 +61,10 @@ def draw(canvas):
     (ball_pos[1] - BALL_RADIUS - ball_line_width <= 0):
         ball_vel[1] = - ball_vel[1]
     
-    
     # update ball
     ball_pos[0] +=  ball_vel[0]
     ball_pos[1] +=  ball_vel[1]   
-    
-        
+       
     # draw ball
     canvas.draw_circle(ball_pos, BALL_RADIUS, ball_line_width, 'White', 'White')
     # update paddle's vertical position, keep paddle on the screen
@@ -111,41 +113,34 @@ def draw(canvas):
 def keydown(key):
     global paddle1_vel, paddle2_vel
     vel = 4
-    # palyer 1
-    if key == simplegui.KEY_MAP["w"]:            
+    # player 1
+    if dict['q'] == key:            
         paddle1_vel -= vel
-    if key == simplegui.KEY_MAP["s"]:
+    if dict['a'] == key:
         paddle1_vel += vel
-    if key == simplegui.KEY_MAP["w"] and key == simplegui.KEY_MAP["s"]:
-        pass
-    
     # player 2
-    if key == simplegui.KEY_MAP["up"]:            
+    if dict['up'] == key:            
         paddle2_vel -= vel
-    if key == simplegui.KEY_MAP["down"]:
+    if dict['down'] == key:
         paddle2_vel += vel
-    if key == simplegui.KEY_MAP["down"] and key == simplegui.KEY_MAP["up"]:
+    else :
         pass
     
 def keyup(key):
     global paddle1_vel, paddle2_vel
-    
-    # palyer 1
-    if key == simplegui.KEY_MAP["w"]:            
+    # player 1
+    if dict['q'] == key:            
         paddle1_vel = 0
-    if key == simplegui.KEY_MAP["s"]:
+    if dict['a'] == key:
         paddle1_vel = 0
-    if key == simplegui.KEY_MAP["w"] and key == simplegui.KEY_MAP["s"]:
-        pass
-    
     # player 2
-    if key == simplegui.KEY_MAP["up"]:            
+    if dict['up'] == key:            
         paddle2_vel = 0
-    if key == simplegui.KEY_MAP["down"]:
+    if dict['down'] == key:
         paddle2_vel = 0
-    if key == simplegui.KEY_MAP["down"] and key == simplegui.KEY_MAP["up"]:
+    else:
         pass
-
+    
 # create frame
 frame = simplegui.create_frame("Pong", WIDTH, HEIGHT)
 frame.set_draw_handler(draw)
