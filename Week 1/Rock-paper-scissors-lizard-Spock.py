@@ -1,5 +1,9 @@
-# Rock-paper-scissors-lizard-Spock template
+# How to run the program
+# Copy and paste the code in codeSkupltor
+# https://py2.codeskulptor.org/
 
+
+# Rock-paper-scissors-lizard-Spock template
 import random
 
 def name_to_number(name):
