@@ -1,3 +1,7 @@
+# How to run the program
+# Copy and paste the code in codeSkupltor
+# https://py2.codeskulptor.org/
+
 # Implementation of classic arcade game Pong
 import simplegui
 import random

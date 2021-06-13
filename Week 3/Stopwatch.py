@@ -1,3 +1,7 @@
+# How to run the program
+# Copy and paste the code in codeSkupltor
+# https://py2.codeskulptor.org/
+
 # template for "Stopwatch: The Game"
 import time
 import simplegui
