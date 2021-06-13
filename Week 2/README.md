@@ -1,3 +1,10 @@
+A reminder about the Honor Code
+For previous mini-projects, we have had instances of students submitting solutions that have been copied from the web. Remember,
+if you can find code on the web for one of the mini-projects, we can also find that code. Submitting copied code violates the Honor
+Code for this class as well as Coursera's Terms of Service. Please write your own code and refrain from copying. If, during peer 
+evaluation, you suspect a submitted mini-project includes copied code, please evaluate as usual and email the assignment details to
+iipphonorcode@online.rice.edu. We will investigate and handle as appropriate.
+
 
 Mini-project description - “Guess the number” game
 
