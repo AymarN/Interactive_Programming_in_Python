@@ -1,3 +1,6 @@
+# @author (Aymar N.) 
+# @version (2021) Version 2.0.0
+
 # How to run the program
 # Copy and paste the code in codeSkupltor
 # https://py2.codeskulptor.org/

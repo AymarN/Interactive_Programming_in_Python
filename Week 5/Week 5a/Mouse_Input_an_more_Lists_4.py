@@ -1,8 +1,11 @@
 ###################################################
-#Copy and paste the code in codeSkulptor to see how it works
 #String list joining problem
 #@author (Aymar N.) 
-#@version (2020) Version 1
+#@version (2021) Version 1
+
+# How to run the program
+# Copy and paste the code in codeSkupltor
+# https://py2.codeskulptor.org/
 
 def string_list_join(string_list):
     sep = ""
