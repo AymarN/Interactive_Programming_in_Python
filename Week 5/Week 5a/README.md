@@ -3,7 +3,7 @@ ________________________________________
 Practice Exercises for Mouse and List Methods 
 
 Solve each of the practice exercises below. Each problem includes three CodeSkulptor links: one for a template that you should
- use as a starting point for your solution, one to our solution to the exercise, and one to a tool that automatically checks your solution. 
+use as a starting point for your solution, one to our solution to the exercise, and one to a tool that automatically checks your solution. 
 1.	For each mouse click, print the position of the mouse click to the console. 
 
 2.	Modify the program template below so that clicking inside any of the three displayed circles prints the color of the clicked circle 
