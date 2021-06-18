@@ -1,16 +1,12 @@
 Practice Exercises for Classes (part 1) (optional)
 ________________________________________
 
+
 Practice Exercises for Classes (part 1) 
 Solve each of the practice exercises below. Each problem includes three CodeSkulptor links: one for a template that you should 
 use as a starting point for your solution, one to our solution to the exercise, and one to a tool that automatically checks your solution.
 
-1. For this set of practice exercises, we will walk you through the creation of a Tile class suitable for use in your week five mini-project,
-Memory. This class will model the logical behavior of cards/tiles used in Memory. Our goal in walking through this design will be to understand 
-the syntactic structure of a Python class in detail as well as the logic that goes into designing a useful class. In Week 6b, we will use this Tile
-class to re-implement Memory in an object-oriented style.If, at some point, you feel confused, you may also want to watch this video on the Basics
-of OOP by Julie. Many students in previous sessions found it to be helpful. 
-To begin, your first task is to define a Tile class using two lines of Python. For now, the body of this class should just be a single pass 
+1. To begin, your first task is to define a Tile class using two lines of Python. For now, the body of this class should just be a single pass 
 statement to keep Python from throwing an error. As usual in Python, the body of the class definition should be indented.
 
 2. Your next task is to create two instances (versions) of a Tile object. Note this is possible even though the body of the class definition 
@@ -47,10 +43,10 @@ In evaluating this call, object_name is bound to the first parameter self in the
 syntax when calling list methods in Python. For example, the statement my_list.append(5) appends the number 5 to the end of the list my_list.
 
 5. At this point, our Tile class is still not so useful. Your next task is to add a field called exposed to a Tile class definition and implement
- three methods that manipulate this field. Logically, this field will be True when the tile's number is exposed to the player and False when the 
- tile's number is hidden from the player. To add this field to a Tile object, you will need to add another parameter exp to the __init__ method 
- and initialize the exposed field with this value. Once you have done this, implement three methods described below that manipulate this field. 
- You will use all of these methods when we re-implement Memory. 
+three methods that manipulate this field. Logically, this field will be True when the tile's number is exposed to the player and False when the 
+tile's number is hidden from the player. To add this field to a Tile object, you will need to add another parameter exp to the __init__ method 
+and initialize the exposed field with this value. Once you have done this, implement three methods described below that manipulate this field. 
+You will use all of these methods when we re-implement Memory. 
 •	is_exposed which takes a tile and returns the value of the exposed field, 
 •	expose_tile which takes a tile and sets the value of its exposed field to be True, and 
 •	hide_tile which take a tile and set the value of its exposed field to be False. 
