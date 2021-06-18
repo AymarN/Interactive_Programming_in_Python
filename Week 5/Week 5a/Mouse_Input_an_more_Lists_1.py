@@ -1,8 +1,12 @@
 # Practise exercices for Mouse and List Methods
 # For each mouse click, print the position of the mouse click to the console
-# Copy and paste the code in codeSkulptor to see how it works
 # @author (Aymar N.) 
-# @version (2020) Version 1
+# @version (2021) Version 1
+
+# How to run the program
+# Copy and paste the code in codeSkupltor
+# https://py2.codeskulptor.org/
+
 
 import simplegui
 import math

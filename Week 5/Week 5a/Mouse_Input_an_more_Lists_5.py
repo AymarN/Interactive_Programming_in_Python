@@ -1,9 +1,12 @@
 ###################################################
-#Copy and paste the code in codeSkulptor to see how it works
 #Complete the given program template to produce a program that fills the canvas 
 #with a 10x10 grid of touching balls of the given size
 #@author (Aymar N.) 
-#@version (2020) Version 1
+#@version (2021) Version 1
+
+# How to run the program
+# Copy and paste the code in codeSkupltor
+# https://py2.codeskulptor.org/
 
 import simplegui
 ball_pos = [20,20]
