@@ -19,6 +19,7 @@ HALF_PAD_WIDTH = PAD_WIDTH / 2
 HALF_PAD_HEIGHT = PAD_HEIGHT / 2
 LEFT = False
 RIGHT = True
+vel = 4
 
 ball_line_width = 1
 ball_pos = [WIDTH / 2, HEIGHT / 2]
@@ -29,16 +30,33 @@ paddle2_pos = HEIGHT / 2
 paddle1_vel, paddle2_vel = 0, 0
 score1, score2 = 0, 0
 
-dict = {
-    'up': simplegui.KEY_MAP["up"], 
-    'down': simplegui.KEY_MAP["down"],
-    'q': simplegui.KEY_MAP["q"],
-    'a': simplegui.KEY_MAP["a"]
+def paddle1_faster():
+    global paddle1_vel, vel
+    paddle1_vel += vel
+    
+def paddle2_faster():
+    global paddle2_vel, vel
+    paddle2_vel += vel
+    
+def paddle1_slower():
+    global paddle1_vel, vel
+    paddle1_vel -= vel
+    
+def paddle2_slower():
+    global paddle2_vel, vel
+    paddle2_vel -= vel
+
+inputs = {
+    'up': paddle2_slower, 
+    'down': paddle2_faster,
+    'w': paddle1_slower,
+    's': paddle1_faster
 }
 
 def spawn_ball(direction):
-    """ 2.Add code that spawns a ball in the middle of the table """
-    """ 5.Add randomization to the velocity"""
+    """\ 2.Add code that spawns a ball in the middle of the table
+    5.Add randomization to the velocity."""
+    
     global ball_pos, ball_vel # these are vectors stored as lists
     ball_pos = [WIDTH / 2, HEIGHT / 2]
     # The velocity of the ball should be upwards.
@@ -53,15 +71,15 @@ def spawn_ball(direction):
              
 # define event handlers
 def new_game():
-    """ 3.Add a call to spawn_ball in new_game which starts a game of Pong """
-    """ 14. Add code to new_game which resets the score before calling spawn_ball """
+    """\ 3.Add a call to spawn_ball in new_game which starts a game of Pong 
+    14. Add code to new_game which resets the score before calling spawn_ball. """
     global paddle1_pos, paddle2_pos, paddle1_vel, paddle2_vel
     global score1, score2 
     score1, score2 = 0, 0
     spawn_ball("RIGHT")
     
 def draw(canvas):
-    # global variables which contain the vertical velocities of the paddles
+    """global variables which contain the vertical velocities of the paddles"""
     global score1, score2, paddle1_pos, paddle2_pos, ball_pos, ball_vel  
         
     # draw mid line and gutters
@@ -110,17 +128,19 @@ def draw(canvas):
     # the paddle.
     
     if (ball_pos[0] + BALL_RADIUS + ball_line_width >= WIDTH - PAD_WIDTH):
-        # change your collision code for the left and right gutters in step 6 to check
-        # whether the ball is actually striking a paddle when it touches a gutter.
-        # 12.increase the velocity of the ball by 10% each time it strikes a paddle.
+        #change your collision code for the left and right gutters in step 6 to check
+        #whether the ball is actually striking a paddle when it touches a gutter.
+        #12.increase the velocity of the ball by 10% each time it strikes a paddle.
+        
         if ball_pos[1] <= paddle2_pos + HALF_PAD_HEIGHT and \
         ball_pos[1] >= paddle2_pos - HALF_PAD_HEIGHT:
             ball_vel[0] = - 1.1 * ball_vel[0]
             ball_vel[1] = 1.1 * ball_vel[1]
-        # 6.when the ball touches a gutter, use either spawn_ball(LEFT)|spawn_ball(RIGHT)
-        # to respawn.
-        # 13.Each time the ball strikes the left or the right gutter
-        # the opposite player receives a point and the ball is respawned appropriately.
+        #6.when the ball touches a gutter, use either spawn_ball(LEFT)|spawn_ball(RIGHT)
+        #to respawn.
+        #13.Each time the ball strikes the left or the right gutter
+        #the opposite player receives a point and the ball is respawned appropriately.
+        
         else:
             score1 += 1
             spawn_ball("LEFT")
@@ -139,43 +159,25 @@ def draw(canvas):
     canvas.draw_text(str(score2), (WIDTH*3/4, HEIGHT/4), 50, 'White')
     
 def keydown(key):
-    """9. Update the values of these two vertical velocities using key handlers"""
-    """q and a keys control the constant vertical velocity of the left paddle"""
-    """up and down keys control the constant vertical velocity of the right paddle"""
-    global paddle1_vel, paddle2_vel
-    vel = 4
-    # player 1
-    if dict['q'] == key:            
-        paddle1_vel -= vel
-    if dict['a'] == key:
-        paddle1_vel += vel
-    # player 2
-    if dict['up'] == key:            
-        paddle2_vel -= vel
-    if dict['down'] == key:
-        paddle2_vel += vel
-    else :
-        pass
+    """\9. Update the values of these two vertical velocities using key handlers
+    q and a keys control the constant vertical velocity of the left paddle
+    up and down keys control the constant vertical velocity of the right paddle"""
+    for i in inputs:
+        if key == simplegui.KEY_MAP[i]:
+            inputs[i]()
     
 def keyup(key):
-    """9. Update the values of these two vertical velocities using key handlers"""
-    """q and a keys control the vertical velocity of the left paddle"""
-    """up and down keys control the vertical velocity of the right paddle"""
+    """\9. Update the values of these two vertical velocities using key handlers
+    q and a keys control the vertical velocity of the left paddle
+    up and down keys control the vertical velocity of the right paddle."""
     global paddle1_vel, paddle2_vel
-    # player 1
-    if dict['q'] == key:            
-        paddle1_vel = 0
-    if dict['a'] == key:
-        paddle1_vel = 0
-    # player 2
-    if dict['up'] == key:            
-        paddle2_vel = 0
-    if dict['down'] == key:
-        paddle2_vel = 0
-    else:
-        pass
-    
-# create frame
+    for i in inputs:
+        if key == simplegui.KEY_MAP[i]:
+            paddle1_vel = 0
+            paddle2_vel = 0
+            
+   
+    # create frame
 frame = simplegui.create_frame("Pong", WIDTH, HEIGHT)
 frame.set_draw_handler(draw)
 frame.set_keydown_handler(keydown)
