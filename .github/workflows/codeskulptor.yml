@@ -11,9 +11,9 @@ jobs:
     
     steps:
       - uses: actions/checkout@v2
-      - name: Set up python ${{matrix.python-version}}
+      - name: Set up python ${{ matrix.python-version }}
       - uses: actions/setup-node@v2
-      - name:  Install CodeSkulptor CLI
+      - name: Install CodeSkulptor CLI
         run: |
           git clone https://github.com/shreyasminocha/csk-cli
           cd csk-cli
@@ -22,4 +22,4 @@ jobs:
           
       - name: Upload with CodeSkulptor CLI
         run: |
-            csk upload Week 8/Spaceship.py Spaceship
+            csk upload ../../Week8/Spaceship.py Spaceship
