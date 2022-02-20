@@ -1,0 +1,25 @@
+name: githubActions with Codeskulptor
+
+on: [push]
+jobs:
+  build:
+  
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: [2.7]
+    
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up python ${{ matrix.python-version }}
+      - uses: actions/setup-node@v2
+      - name: Install CodeSkulptor CLI
+        run: |
+          git clone https://github.com/shreyasminocha/csk-cli
+          cd csk-cli
+          sudo install ./bin/csk /usr/local/bin/csk
+          sudo install ./csk.1 /usr/local/share/man/man1/csk.1 
+          
+      - name: Upload with CodeSkulptor CLI
+        run: |
+            csk upload ../../Week8/Spaceship.py Spaceship
