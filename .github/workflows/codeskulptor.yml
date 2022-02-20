@@ -24,4 +24,4 @@ jobs:
           
       - name: Upload with CodeSkulptor CLI
         run: |
-            csk upload Week8/Spaceship.py Spaceship
+            csk upload Week8/Spaceship.py 
