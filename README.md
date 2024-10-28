@@ -33,16 +33,17 @@
                                           |with a 10*10 grid of touching balls of      |                                              |
                                           |the given size.                             |                                              |  
                                           
-                                          |Polyline drawing problem                    |Draw a polyline.                               |   
+                                          |Polyline drawing problem                    |Draw a polyline.                              |   
 
     |Week 5b                              |Memory                                      |Implement the memory card game with lists     |   
                                                                                        |like a set of cards.
 
     |Week 6a                              |class tile                                  |                                              |    
-                                          |Avatar                                      |                                              |    
+                                          |Avatar                                      |The Avatar class by Moria Merriweather        |    
 
     |Week 6b                              |BlackJack                                   |Develop the Blackjack which is played in      |    
                                                                                        |casinos in two phases.
+                                                                                       
     |Week 7                               |Spaceship                                   |                                              |     
 
     |Week 8                               |Spaceship                                   |                                              |   
