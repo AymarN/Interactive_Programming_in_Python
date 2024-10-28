@@ -8,11 +8,14 @@
                                                                         
     |Week 0                               |                                            |                                              |
                                                 
-    |Week 1                               |Rock-paper-scissors-lizard-Spock            |                                              |
-
-    |Week 2                               |Guess the number                            |                                              |
-                                          
-    |Week 3                               |Stopwatch                                   |                                              |
+    |Week 1                               |Rock-paper-scissors                         |Rock-paper-scissors-lizard-Spock              |
+                                                                                       |RPSLS a variant of Rock-paper-scissors.
+                                                                                        
+    |Week 2                               |Guess the number                            |Implement the "Guess the number" game         |
+                                                                                       |with an input field to enter guesses.
+                                                                                       
+    |Week 3                               |Stopwatch                                   |A simple digital stopwatch that keeps         |
+                                                                                       |track of the time in 0.1 second.
 
     |Week 4                               |arcade-game-pong                            |                                              |
                                           
