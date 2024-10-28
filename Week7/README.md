@@ -22,7 +22,7 @@ to multiple versions of Asteroids that are available on the web (including an up
 Mini-project development process
 
 For this mini-project, you will implement a working spaceship plus add a single asteroid and a single missile. We have provided art for your game 
-so its look and feel is that of a more modern game. You should begin by loading theprogram template.The program template includes all necessary 
+so its look and feel is that of a more modern game. You should begin by loading the program template. The program template includes all necessary 
 image and audio files. Unfortunately, no audio format is supported by all major browsers so we have decided to provided sounds in the mp3 format 
 which is supported by Chrome (but not by Firefox on some systems). ogg versions are also available.) We highly recommend using Chrome for the last
 two weeks of the class. We have found that Chrome typically has better performance on games with more substantial drawing requirements and 
@@ -82,8 +82,8 @@ You will need to update the velocity vector by a small fraction of the forward a
 10.	Then, modify the ship's update method such that the ship's position wraps around the screen when it goes off the edge (use modular arithmetic!).
 
 11.	Up to this point, your ship will never slow down. Finally, add friction to the ship's update method as shown in the "Acceleration and Friction" 
-video by multiplying each component of the velocity by a number slightly less than 1 during each update.You should now have a ship that flies around
-the screen,as you would like for RiceRocks. Adjust the constants as you would like to get it to fly how you want.
+video by multiplying each component of the velocity by a number slightly less than 1 during each update. You should now have a ship that flies around
+the screen, as you would like for RiceRocks. Adjust the constants as you would like to get it to fly how you want.
 
 Phase two - Rocks
 
