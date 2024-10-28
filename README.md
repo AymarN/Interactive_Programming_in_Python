@@ -17,7 +17,8 @@
     |Week 3                               |Stopwatch                                   |A simple digital stopwatch that keeps         |
                                                                                        |track of the time in 0.1 second.
 
-    |Week 4                               |arcade-game-pong                            |                                              |
+    |Week 4                               |arcade-game-pong                            |Implement the pong game with a ball moving    |
+                                                                                       |across a left and a right paddle.             |
                                           
     |Week 5a                              |Mouse and the lists                         |                                              |   
     
