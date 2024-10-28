@@ -119,7 +119,9 @@ of the ship's forward vector.
 2.	Modify the keydown handler to call this shoot method when the spacebar is pressed.
 
 3.	Make sure that the missile sound is passed to the sprite initializer so that the shooting sound is played whenever you shoot a missile.
+   
 Phase four - User interface
+
 Our user interface for RiceRocks simply shows the number of lives remaining and the score. This week neither of those elements ever change, 
 but they will next week. Add code to the draw event handler to draw these on the canvas. Use the lives and score global variables as the current
 lives remaining and score. For more helpful tips on implementing this mini-project, please visit the Code Clinic tips page for this mini-project.
