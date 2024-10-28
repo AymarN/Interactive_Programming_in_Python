@@ -20,27 +20,29 @@
     |Week 4                               |arcade-game-pong                            |Implement the pong game with a ball moving    |
                                                                                        |across a left and a right paddle.             |
                                           
-    |Week 5a                              |Mouse and the lists                         |                                              |   
-    
-                                          |Circle clicking problem                     |                                              |   
+    |Week 5a                              |Mouse and the lists                         |Dislay in the console the position of the     |   
+                                                                                       |mouse for each mouse click. 
+                                                                                       
+                                          |Circle clicking problem                     |Circle clicking problem                       |   
                                           
-                                          |Day to Number                               |                                              |   
+                                          |Day to Number                               |list.index()                                  |   
                                           
-                                          |String list joining problem                 |                                              |   
+                                          |String list joining problem                 |From list to String                           |   
                                           
                                           |A program that fills the canvas             |                                              |  
                                           |with a 10*10 grid of touching balls of      |                                              |
                                           |the given size.                             |                                              |  
                                           
-                                          |Polyline drawing problem                    |                                              |   
+                                          |Polyline drawing problem                    |Draw a polyline.                               |   
 
-    |Week 5b                              |Memory                                      |                                              |   
+    |Week 5b                              |Memory                                      |Implement the memory card game with lists     |   
+                                                                                       |like a set of cards.
 
     |Week 6a                              |class tile                                  |                                              |    
                                           |Avatar                                      |                                              |    
 
-    |Week 6b                              |BlackJack                                   |                                              |    
-
+    |Week 6b                              |BlackJack                                   |Develop the Blackjack which is played in      |    
+                                                                                       |casinos in two phases.
     |Week 7                               |Spaceship                                   |                                              |     
 
     |Week 8                               |Spaceship                                   |                                              |   
