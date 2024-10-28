@@ -44,13 +44,17 @@
     |Week 6b                              |BlackJack                                   |Develop the Blackjack which is played in      |    
                                                                                        |casinos in two phases.
                                                                                        
-    |Week 7                               |Spaceship                                   |                                              |     
-
+    |Week 7                               |Spaceship                                   |A 2D archade game that is inspired by the     |     
+                                                                                       |archade game Asteroids(1979).Implement                        
+                                                                                       |a spaceship, rocks and missiles.The remaining
+                                                                                       |lives and score don't change in this project.
     |Week 8                               |Spaceship                                   |                                              |   
          
 
 #### Aymar Sedami's comments
-
+The first course is helpful to comprehend that interpreted language. In general, the courses are supportive to delve in data structures
+in python. Solving the project is challenging, however the instructions consist of steps to lead us to the correct answer.
+Thank you.
 
 
 
