@@ -20,34 +20,44 @@
     |Week 4                               |arcade-game-pong                            |Implement the pong game with a ball moving    |
                                                                                        |across a left and a right paddle.             |
                                           
-    |Week 5a                              |Mouse and the lists                         |                                              |   
-    
-                                          |Circle clicking problem                     |                                              |   
+    |Week 5a                              |Mouse and the lists                         |Dislay in the console the position of the     |   
+                                                                                       |mouse for each mouse click. 
+                                                                                       
+                                          |Circle clicking problem                     |Circle clicking problem                       |   
                                           
-                                          |Day to Number                               |                                              |   
+                                          |Day to Number                               |list.index()                                  |   
                                           
-                                          |String list joining problem                 |                                              |   
+                                          |String list joining problem                 |From list to String                           |   
                                           
-                                          |A program that fills the canvas             |                                              |  
-                                          |with a 10*10 grid of touching balls of      |                                              |
+                                          |A program that fills the canvas             | Draw in the canvas touching balls            |  
+                                          |with a 10*10 grid of touching balls of      | through the draw_circle() method.            |
                                           |the given size.                             |                                              |  
                                           
-                                          |Polyline drawing problem                    |                                              |   
+                                          |Polyline drawing problem                    |Draw a polyline.                              |   
 
-    |Week 5b                              |Memory                                      |                                              |   
+    |Week 5b                              |Memory                                      |Implement the memory card game with lists     |   
+                                                                                       |like a set of cards.
 
-    |Week 6a                              |class tile                                  |                                              |    
-                                          |Avatar                                      |                                              |    
+    |Week 6a                              |class tile                                  |Draw tiles in the simplegui frame             | 
+    
+                                          |Avatar                                      |The Avatar class by Moria Merriweather        |    
 
-    |Week 6b                              |BlackJack                                   |                                              |    
-
-    |Week 7                               |Spaceship                                   |                                              |     
-
-    |Week 8                               |Spaceship                                   |                                              |   
-         
-
+    |Week 6b                              |BlackJack                                   |Develop the Blackjack which is played in      |    
+                                                                                       |casinos in two phases.
+                                                                                       
+    |Week 7                               |Spaceship                                   |A 2D archade game that is inspired by the     |     
+                                                                                       |archade game Asteroids(1979).Implement                        
+                                                                                       |a spaceship, rocks and missiles. The remaining
+                                                                                       |lives and score don't change in this project.
+                                                                                       
+    |Week 8                               |Spaceship                                   |A 2D archade game that is inspired by the     |   
+                                                                                       |archade game Asteroids(1979).In addition to 
+                                                                                       |the previous exercice implement multiple rocks
+                                                                                       |and collisions with lives and score.
 #### Aymar Sedami's comments
-
+The first course is helpful to comprehend that interpreted language. In general, the courses are supportive to delve in data structures
+in python. Solving the project is challenging, however the instructions consist of steps to lead us to the correct answer.<br />
+Thank you.
 
 
 
