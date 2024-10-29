@@ -29,8 +29,8 @@
                                           
                                           |String list joining problem                 |From list to String                           |   
                                           
-                                          |A program that fills the canvas             |                                              |  
-                                          |with a 10*10 grid of touching balls of      |                                              |
+                                          |A program that fills the canvas             | Draw in the canvas touching balls            |  
+                                          |with a 10*10 grid of touching balls of      | through the draw_circle() method.            |
                                           |the given size.                             |                                              |  
                                           
                                           |Polyline drawing problem                    |Draw a polyline.                              |   
