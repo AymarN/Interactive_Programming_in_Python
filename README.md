@@ -38,7 +38,8 @@
     |Week 5b                              |Memory                                      |Implement the memory card game with lists     |   
                                                                                        |like a set of cards.
 
-    |Week 6a                              |class tile                                  |                                              |    
+    |Week 6a                              |class tile                                  |Draw tiles in the simplegui frame             | 
+    
                                           |Avatar                                      |The Avatar class by Moria Merriweather        |    
 
     |Week 6b                              |BlackJack                                   |Develop the Blackjack which is played in      |    
@@ -55,7 +56,7 @@
                                                                                        |and collisions with lives and score.
 #### Aymar Sedami's comments
 The first course is helpful to comprehend that interpreted language. In general, the courses are supportive to delve in data structures
-in python. Solving the project is challenging, however the instructions consist of steps to lead us to the correct answer.
+in python. Solving the project is challenging, however the instructions consist of steps to lead us to the correct answer.<br />
 Thank you.
 
 
