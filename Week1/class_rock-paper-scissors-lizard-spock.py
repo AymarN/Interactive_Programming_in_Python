@@ -55,7 +55,7 @@ class RPSLS:
             for k , v in self.name_to_number().items():
                 if k == self.player_choice:
                     self.player_number  = self.name_to_number()[k]
-                    print("The player_number is : " + str(self.player_number ))
+                    print("The player_number is : " , str(self.player_number ))
     # v1                     
         except ValueError as e:
             print("That choice is not allowed, try one more time :")
@@ -66,11 +66,10 @@ class RPSLS:
         """ A method that returns the computer choice"""
         
         print(" ")
-        print(" The computer guess is : ")
         self.comp_number = random.randrange(5)
         for value in self.name_to_number().values():
             if self.comp_number == value : 
-                print(self.comp_number)
+                print("The computer guess is : ", self.comp_number)
                 return self.comp_number
     
     # Spep 5.
